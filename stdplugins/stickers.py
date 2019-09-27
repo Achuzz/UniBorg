@@ -44,7 +44,7 @@ async def _(event):
 
     me = borg.me
     userid = event.from_id
-    packname = f"{userid}'s @UniBorg Pack"
+    packname = f"അച്ചൂസിന്റെ മോഷണമുതൽ "
     packshortname = f"Uni_Borg_{userid}"  # format: Uni_Borg_userid
 
     is_a_s = is_it_animated_sticker(reply_message)
@@ -65,7 +65,7 @@ async def _(event):
             sticker.seek(0)
             uploaded_sticker = await borg.upload_file(sticker, file_name=file_ext_ns_ion)
 
-    await event.edit("Processing this sticker. Please Wait!")
+    await event.edit("കുരുനരി മോഷ്ടിക്കരുത് ! 🥴🥴")
 
     async with borg.conversation("@Stickers") as bot_conv:
         now = datetime.datetime.now()
